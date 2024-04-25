@@ -1,0 +1,12 @@
+.label {
+  font-size: 15pt;
+  background-color: rgb(230, 230, 230);
+  text-align: left;
+  border: 2px solid #000000;
+}
+
+.investments {
+  font-size: 15pt;
+  text-align: left;
+  line-height: 1.5;
+}
