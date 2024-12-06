@@ -1,0 +1,19 @@
+Current progress:
+
+tiered json search criteria for more accurate feature extraction
+
+implemented multithreading to increase speed of json scraping
+
+Incorperated market sector and year as features
+
+fetching Individual features from a single stock for website prediction
+
+
+
+Notes:
+
+Market sector classification
+
+Individual market/time period model : specializes
+
+Current model too general

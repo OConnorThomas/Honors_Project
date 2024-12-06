@@ -1,0 +1,9 @@
+Simpler program results:
+All entries have been written to bulk_data with 135901 entries.
+Entries removed containing zero: 129818
+Total remaining entries: 6083
+
+New program results:
+All entries have been written to bulk_data with 135901 entries.                                                                                                                 
+Entries removed containing zero: 130271
+Total remaining entries: 5630

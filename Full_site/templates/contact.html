@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="static/css/home.css" />
+    <!-- Link to external JS file -->
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Financial, Analysis, Software" />
+    <!-- Description / Title / Logo -->
+    <meta
+      name="description"
+      content="This program processes historical stock data and 
+              suggests an investment using a predictive algorithm."
+    />
+    <title>Financial Analysis Software</title>
+    <link
+      rel="icon"
+      href="static/images/FAS Transparent Square.png"
+      type="FAS Square.png"
+    />
+  </head>
+  <!-- Body -->
+
+  <body class="noscroll">
+    <nav>
+      <div class="left">
+        <a href="/">
+          <img
+            src="static/images/FAS Transparent.png"
+            alt="FAS Logo"
+            class="small-height"
+          />
+        </a>
+        <ul>
+          <li><a href="/" class="red-hover">Home</a></li>
+          <li><a href="/analysis" class="red-hover">Analysis</a></li>
+          <li><a href="/predictions" class="red-hover">Predictions</a></li>
+          <li><a href="/algorithms" class="red-hover">Algorithms</a></li>
+          <li><a href="/contact" class="red-hover">Contact</a></li>
+        </ul>
+      </div>
+      <div class="search-container">
+        <form id="search-form" action="/analysis" method="POST">
+          <!-- Add method POST -->
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            name="stock_input"
+            placeholder="Predict on a Stock:"
+            list="stock-list"
+            autocomplete="off"
+          />
+          <button type="submit" id="search-button" class="search-icon"></button>
+        </form>
+
+        <!-- Static list of items for the dropdown -->
+        <datalist id="stock-list">
+          <option value="AAPL"></option>
+          <option value="GE"></option>
+          <option value="MSFT"></option>
+          <option value="RBOT"></option>
+          <option value="NVDA"></option>
+        </datalist>
+      </div>
+      <div class="right">
+        <div id="temp"></div>
+      </div>
+    </nav>
+    <div class="nav-extension"></div>
+    <div class="blurred-region"></div>
+    <div class="page-content">
+      <div class="three-container">
+        <div class="box inset-border">
+          <div class="inline">
+            <img
+              src="static/images/Paul-Headshot.png"
+              alt="Professor Paul Downen : Faculty Member"
+              class="small-pad"
+            />
+            <div>
+              <h2 class="focus">Paul Downen</h2>
+              <h3>Faculty Member</h3>
+            </div>
+          </div>
+          <div class="blurred">
+            <div class="uc3 circle"></div>
+            <div class="uc3 circle"></div>
+            <div class="uc1 circle"></div>
+          </div>
+        </div>
+        <div class="box inset-border">
+          <div class="inline">
+            <img
+              src="static/images/Thomas-Headshot.png"
+              alt="Student Thomas O'Connor : Author"
+              class="small-pad focus"
+            />
+            <div>
+              <h2 class="focus">Thomas O'Connor</h2>
+              <h3>Author</h3>
+            </div>
+          </div>
+          <div class="blurred">
+            <div class="uc1 circle"></div>
+            <div class="uc3 circle"></div>
+            <div class="uc2 circle"></div>
+          </div>
+        </div>
+        <div class="box inset-border">
+          <div class="inline">
+            <img
+              src="static/images/EunJu-Headshot.png"
+              alt="Professor Eunju Lee : Committee Member"
+              class="small-pad focus"
+            />
+            <div>
+              <h2 class="focus">Eunju Lee</h2>
+              <h3>Committee Member</h3>
+            </div>
+          </div>
+          <div class="blurred">
+            <div class="uc2 circle"></div>
+            <div class="uc3 circle"></div>
+            <div class="uc3 circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="eleven-container">
+        <div class="one-sized box inset-border">
+          <a
+            href="https://github.com/OConnorThomas/FAS-Website"
+            target="_blank"
+            class="small-pad"
+          >
+            <h3 class="inline yellow-hover">Github Repo</h3></a
+          >
+          <div class="blurred">
+            <div class="uc1 circle"></div>
+          </div>
+        </div>
+        <div class="three-sized box inset-border">
+          <div class="small-pad">
+            <h2 class="focus underline">Introduction</h2>
+            <a
+              href="static/docs/Honors_project_presentation.ppt"
+              target="_blank"
+              class="no-decor"
+            >
+              <h3 class="focus yellow-hover">Powerpoint Presentation</h3>
+            </a>
+            <a
+              href="static/docs/Author_notes.pdf"
+              target="_blank"
+              class="no-decor"
+            >
+              <h3 class="focus yellow-hover">Author's Note</h3>
+            </a>
+          </div>
+          <div class="blurred">
+            <div class="uc1 circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="three-sized box inset-border">
+          <div class="small-pad">
+            <h2>Version 1.2.1</h2>
+            <div class="sblurred">
+              <h3>
+                <span class="circle" style="background-color: rgb(215, 11, 0)"
+                  >HTML</span
+                >
+                ⍿
+                <span class="circle" style="background-color: rgb(0, 174, 255)"
+                  >CSS</span
+                >
+                ⍿
+                <span class="circle" style="background-color: rgb(0, 192, 29)"
+                  >Python</span
+                >
+              </h3>
+            </div>
+
+            <h3>HTML ⍿ CSS ⍿ Python</h3>
+            <div class="inline">
+              <a
+                href="https://github.com/OConnorThomas/FAS-Website"
+                target="_blank"
+                class="no-decor"
+              >
+                <h3 class="focus orange-hover">Source Code</h3>
+              </a>
+              <a
+                href="static/docs/AI_Model_Graphic.png"
+                target="_blank"
+                class="no-decor"
+              >
+                <h3 class="focus purple-hover jright">Model Visual</h3>
+              </a>
+            </div>
+            <h3></h3>
+          </div>
+        </div>
+        <div class="three-sized box inset-border">
+          <div class="small-pad">
+            <h2 class="focus underline">References</h2>
+            <a href="static/docs/readme.md" target="_blank" class="no-decor"
+              ><h3 class="focus red-hover">README</h3></a
+            >
+            <a
+              href="https://www.kaggle.com/datasets/finnhub/reported-financials"
+              target="_blank"
+              class="no-decor"
+              ><h3 class="focus red-hover">Training Dataset</h3></a
+            >
+          </div>
+          <div class="blurred">
+            <div class="circle"></div>
+            <div class="uc2 circle"></div>
+          </div>
+        </div>
+        <div class="one-sized box inset-border">
+          <div class="small-pad">
+            <a href="/" class="no-decor">
+              <h3 class="focus red-hover">&copy; FAS 2024</h3>
+            </a>
+          </div>
+          <div class="blurred">
+            <div class="uc2 circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

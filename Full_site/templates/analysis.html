@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="static/css/home.css" />
+    <!-- Link to external JS file -->
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Financial, Analysis, Software" />
+    <!-- Description / Title / Logo -->
+    <meta
+      name="description"
+      content="This program processes historical stock data and 
+              suggests an investment using a predictive algorithm."
+    />
+    <title>Financial Analysis Software</title>
+    <link
+      rel="icon"
+      href="static/images/FAS Transparent Square.png"
+      type="FAS Square.png"
+    />
+  </head>
+  <!-- Body -->
+
+  <body class="noscroll">
+    <nav>
+      <div class="left">
+        <a href="/">
+          <img
+            src="static/images/FAS Transparent.png"
+            alt="FAS Logo"
+            class="small-height"
+          />
+        </a>
+        <ul>
+          <li><a href="/" class="red-hover">Home</a></li>
+          <li><a href="/analysis" class="red-hover">Analysis</a></li>
+          <li><a href="/predictions" class="red-hover">Predictions</a></li>
+          <li><a href="/algorithms" class="red-hover">Algorithms</a></li>
+          <li><a href="/contact" class="red-hover">Contact</a></li>
+        </ul>
+      </div>
+      <div class="search-container">
+        <form id="search-form" action="/analysis" method="POST">
+          <!-- Add method POST -->
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            name="stock_input"
+            placeholder="Predict on a Stock:"
+            list="stock-list"
+            autocomplete="off"
+          />
+          <button type="submit" id="search-button" class="search-icon"></button>
+        </form>
+
+        <!-- Static list of items for the dropdown -->
+        <datalist id="stock-list">
+          <option value="AAPL"></option>
+          <option value="GE"></option>
+          <option value="MSFT"></option>
+          <option value="RBOT"></option>
+          <option value="NVDA"></option>
+        </datalist>
+      </div>
+      <div class="right">
+        <div id="temp"></div>
+      </div>
+    </nav>
+    <div class="nav-extension"></div>
+    <div class="blurred-region"></div>
+    <div class="page-content">
+      <div class="eleven-container">
+        <!-- <div class="two-sized box">
+          <h2 class="underline">Top Left</h2>
+          <div class="blurred">
+            <div class="uc3 circle"></div>
+            <div class="uc3 circle"></div>
+          </div>
+        </div> -->
+        <div class="four-sized box">
+          <h2 class="underline">Financials</h2>
+          <h2>{{INFO | safe}}</h2>
+          <div class="blurred">
+            <div class="uc1 circle"></div>
+            <div class="uc1 circle"></div>
+            <div class="uc1 circle"></div>
+            <div class="uc1 circle"></div>
+          </div>
+        </div>
+        <div class="six-sized box">
+          <a href="/algorithms"
+            ><img
+              src="static/images/neural_network.png"
+              alt="Neural Network Visual"
+              style="width: 50vw; position: relative; z-index: 10"
+          /></a>
+          <div class="blurred">
+            <div class="uc4 circle"></div>
+            <div class="uc4 circle"></div>
+            <div class="uc4 circle"></div>
+            <div class="uc4 circle"></div>
+            <div class="uc4 circle"></div>
+            <div class="uc4 circle"></div>
+          </div>
+        </div>
+        <div class="one-sized box">
+          <h2 class="underline">Predicted Growth (1 year):</h2>
+          <h2 class="RESULT">{{RESULT}}</h2>
+          <div class="blurred">
+            <div class="uc2 circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

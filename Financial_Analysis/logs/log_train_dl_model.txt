@@ -1,0 +1,4 @@
+Statistical Summary of Labels (Percent_Growth):
+                     Mean    Median     Std Dev     Min          Max
+Percent_Growth  11.761942  4.329239  116.424789 -99.975  4247.826087
+----------------------------------------------------------------------

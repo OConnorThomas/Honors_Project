@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="static/css/home.css" />
+    <!-- Link to external JS file -->
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Financial, Analysis, Software" />
+    <!-- Description / Title / Logo -->
+    <meta
+      name="description"
+      content="This program processes historical stock data and 
+              suggests an investment using a predictive algorithm."
+    />
+    <title>Financial Analysis Software</title>
+    <link
+      rel="icon"
+      href="static/images/FAS Transparent Square.png"
+      type="FAS Square.png"
+    />
+    <!-- Prism.js for Syntax Highlighting -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Body -->
+
+  <body class="noscroll">
+    <nav>
+      <div class="left">
+        <a href="/">
+          <img
+            src="static/images/FAS Transparent.png"
+            alt="FAS Logo"
+            class="small-height"
+          />
+        </a>
+        <ul>
+          <li><a href="/" class="red-hover">Home</a></li>
+          <li><a href="/analysis" class="red-hover">Analysis</a></li>
+          <li><a href="/predictions" class="red-hover">Predictions</a></li>
+          <li><a href="/algorithms" class="red-hover">Algorithms</a></li>
+          <li><a href="/contact" class="red-hover">Contact</a></li>
+        </ul>
+      </div>
+      <div class="search-container">
+        <form id="search-form" action="/analysis" method="POST">
+          <!-- Add method POST -->
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            name="stock_input"
+            placeholder="Predict on a Stock:"
+            list="stock-list"
+            autocomplete="off"
+          />
+          <button type="submit" id="search-button" class="search-icon"></button>
+        </form>
+
+        <!-- Static list of items for the dropdown -->
+        <datalist id="stock-list">
+          <option value="AAPL"></option>
+          <option value="GE"></option>
+          <option value="MSFT"></option>
+          <option value="RBOT"></option>
+          <option value="NVDA"></option>
+        </datalist>
+      </div>
+      <div class="right">
+        <div id="temp"></div>
+      </div>
+    </nav>
+    <div class="nav-extension"></div>
+    <div class="blurred-region"></div>
+    <div class="page-content">
+      <div class="four-container">
+        <!-- Python file buttons -->
+        <div
+          class="one-sized box"
+          onclick="loadFile('static/docs/app.py', 'Website Code')"
+        >
+          <h2 class="underline">Website Code</h2>
+          <div class="blurred">
+            <div class="uc1 circle"></div>
+            <div class="uc1 circle"></div>
+            <div class="uc1 circle"></div>
+          </div>
+        </div>
+        <div
+          class="one-sized box"
+          onclick="loadFile('static/docs/query.py', 'Query API')"
+        >
+          <h2 class="underline">Query API</h2>
+          <div class="blurred">
+            <div class="uc2 circle"></div>
+            <div class="uc2 circle"></div>
+            <div class="uc2 circle"></div>
+          </div>
+        </div>
+        <div
+          class="one-sized box"
+          onclick="loadFile('static/docs/full_model.py', 'Neural Network')"
+        >
+          <h2 class="underline">Neural Network</h2>
+          <div class="blurred">
+            <div class="uc3 circle"></div>
+            <div class="uc3 circle"></div>
+            <div class="uc3 circle"></div>
+          </div>
+        </div>
+        <div
+          class="one-sized box"
+          onclick="loadFile('static/docs/generate_features.py', 'Generate Data')"
+        >
+          <h2 class="underline">Generate Data</h2>
+          <div class="blurred">
+            <div class="uc5 circle"></div>
+            <div class="uc5 circle"></div>
+            <div class="uc5 circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="three-container">
+        <!-- Displayed Python file section -->
+        <div class="three-sized box">
+          <h2 class="underline" id="file-title">Select a File</h2>
+          <pre><code id="code-display" class="language-python"></code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script>
+      /**
+       * Function to fetch and display the content of a Python file.
+       * @param {string} filePath - The path to the Python file.
+       * @param {string} title - The title to display above the code.
+       */
+      function loadFile(filePath, title) {
+        // Update the title
+        document.getElementById("file-title").textContent = title;
+
+        // Fetch and display the file content
+        fetch(filePath)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`Failed to fetch ${filePath}`);
+            }
+            return response.text();
+          })
+          .then((code) => {
+            // Insert code content into the <code> block
+            const codeElement = document.getElementById("code-display");
+            codeElement.textContent = code;
+
+            // Highlight the code using Prism.js
+            Prism.highlightElement(codeElement);
+          })
+          .catch((error) => {
+            console.error(`Error loading file ${filePath}:`, error);
+          });
+      }
+    </script>
+  </body>
+</html>

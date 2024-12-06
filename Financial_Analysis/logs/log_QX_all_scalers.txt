@@ -1,0 +1,214 @@
+Statistical Summary of Labels (Percent_Growth):
+                     Mean    Median     Std Dev     Min          Max
+Percent_Growth  11.761942  4.329239  116.424789 -99.975  4247.826087
+----------------------------------------------------------------------
+Results for Model_1 with MinMaxScaler:
+Mean Squared Error: 29228.530603485036
+Mean Absolute Error: 39.6830982457787
+R-squared Score: -0.0017343697900928934
+                Mean     Median   Std Dev        Min        Max
+Predicted  11.802987  11.861628  1.515842 -31.614286  12.330254
+----------------------------------------------------------------------
+Results for Model_2 with MinMaxScaler:
+Mean Squared Error: 29261.546984628687
+Mean Absolute Error: 39.114673446238
+R-squared Score: -0.0028659232098102727
+               Mean    Median   Std Dev       Min       Max
+Predicted  7.657278  7.626388  0.176138  4.313187  8.443025
+----------------------------------------------------------------------
+Results for Model_3 with MinMaxScaler:
+Mean Squared Error: 29288.69574531873
+Mean Absolute Error: 38.99614396137907
+R-squared Score: -0.003796378696928615
+               Mean    Median   Std Dev       Min       Max
+Predicted  6.072139  6.036188  0.154022  4.030738  7.096083
+----------------------------------------------------------------------
+Results for Model_4 with MinMaxScaler:
+Mean Squared Error: 29261.94495689801
+Mean Absolute Error: 39.16592989935937
+R-squared Score: -0.0028795627083471054
+               Mean    Median   Std Dev       Min       Max
+Predicted  8.232987  8.237115  0.309339  1.123773  8.595848
+----------------------------------------------------------------------
+Results for Model_5 with MinMaxScaler:
+Mean Squared Error: 29208.4811380061
+Mean Absolute Error: 40.27913632451308
+R-squared Score: -0.0010472247899342424
+                Mean     Median   Std Dev       Min        Max
+Predicted  14.653905  14.614204  0.303512  8.711737  15.452008
+----------------------------------------------------------------------
+Results for Model_6 with MinMaxScaler:
+Mean Squared Error: 29247.644140268178
+Mean Absolute Error: 39.22814061332861
+R-squared Score: -0.0023894381882845206
+               Mean    Median   Std Dev       Min       Max
+Predicted  8.695936  8.662301  0.174548  5.967714  9.568748
+----------------------------------------------------------------------
+Results for Model_7 with MinMaxScaler:
+Mean Squared Error: 29238.296507647687
+Mean Absolute Error: 39.33160383281527
+R-squared Score: -0.0020690715917166536
+              Mean    Median   Std Dev       Min       Max
+Predicted  9.49277  9.452139  0.208075  5.959344  10.57408
+----------------------------------------------------------------------
+Results for Model_8 with MinMaxScaler:
+Mean Squared Error: 29255.730962047943
+Mean Absolute Error: 39.15559752274943
+R-squared Score: -0.0026665936645229316
+              Mean    Median   Std Dev       Min       Max
+Predicted  8.05244  8.030529  0.164862  4.678614  8.538921
+----------------------------------------------------------------------
+Results for Model_9 with MinMaxScaler:
+Mean Squared Error: 29265.32784259417
+Mean Absolute Error: 39.09205047064856
+R-squared Score: -0.0029955026068280155
+               Mean    Median   Std Dev       Min       Max
+Predicted  7.396645  7.366732  0.149203  4.972202  8.160067
+----------------------------------------------------------------------
+Results for Model_10 with MinMaxScaler:
+Mean Squared Error: 29187.564096986935
+Mean Absolute Error: 39.93202690005017
+R-squared Score: -0.00033034582029101145
+                Mean     Median   Std Dev        Min       Max
+Predicted  12.933179  12.933202  0.000495  12.919045  12.93322
+----------------------------------------------------------------------
+Results for Model_1 with StandardScaler:
+Mean Squared Error: 29582.50489636615
+Mean Absolute Error: 39.067865244522125
+R-squared Score: -0.013865948349806034
+               Mean    Median   Std Dev         Min         Max
+Predicted  8.605162  6.767373  9.169522 -116.482689  147.641571
+----------------------------------------------------------------------
+Results for Model_2 with StandardScaler:
+Mean Squared Error: 29895.243340365036
+Mean Absolute Error: 38.71337245878694
+R-squared Score: -0.024584271906960886
+               Mean    Median   Std Dev        Min        Max
+Predicted  7.744232  6.893352  6.873932 -58.320229  70.699219
+----------------------------------------------------------------------
+Results for Model_3 with StandardScaler:
+Mean Squared Error: 29996.44977154927
+Mean Absolute Error: 39.88103418330247
+R-squared Score: -0.028052867777769164
+                Mean     Median   Std Dev        Min        Max
+Predicted  13.222656  11.485515  9.907445 -62.908619  77.099205
+----------------------------------------------------------------------
+Results for Model_4 with StandardScaler:
+Mean Squared Error: 30045.224679195373
+Mean Absolute Error: 40.25084352355681
+R-squared Score: -0.029724505056949235
+                Mean     Median    Std Dev       Min         Max
+Predicted  14.235745  12.003183  11.320629 -66.13958  102.139183
+----------------------------------------------------------------------
+Results for Model_5 with StandardScaler:
+Mean Squared Error: 29776.75262973752
+Mean Absolute Error: 39.38734950583051
+R-squared Score: -0.020523300832271163
+                Mean     Median    Std Dev       Min         Max
+Predicted  10.633438  10.251509  11.263968 -41.88068  137.931458
+----------------------------------------------------------------------
+Results for Model_6 with StandardScaler:
+Mean Squared Error: 29827.711969128213
+Mean Absolute Error: 40.06702281517113
+R-squared Score: -0.02226980401513634
+                Mean   Median    Std Dev        Min         Max
+Predicted  13.688446  11.3117  10.434511 -47.313877  152.383469
+----------------------------------------------------------------------
+Results for Model_7 with StandardScaler:
+Mean Squared Error: 30366.467672205054
+Mean Absolute Error: 39.05895031035997
+R-squared Score: -0.04073430064050365
+               Mean    Median   Std Dev        Min         Max
+Predicted  4.092403  4.297948  8.772394 -94.644341  123.717957
+----------------------------------------------------------------------
+Results for Model_8 with StandardScaler:
+Mean Squared Error: 29669.357347299785
+Mean Absolute Error: 39.21101813495717
+R-squared Score: -0.0168425976511688
+                Mean    Median   Std Dev        Min        Max
+Predicted  10.030605  7.937698  7.410677 -35.116364  84.768555
+----------------------------------------------------------------------
+Results for Model_9 with StandardScaler:
+Mean Squared Error: 30028.35961741428
+Mean Absolute Error: 39.003289124518645
+R-squared Score: -0.029146497484008105
+               Mean    Median   Std Dev        Min        Max
+Predicted  8.296422  7.454975  7.295728 -70.427238  91.039314
+----------------------------------------------------------------------
+Results for Model_10 with StandardScaler:
+Mean Squared Error: 29715.893224574746
+Mean Absolute Error: 39.171148768744814
+R-squared Score: -0.01843749779606707
+               Mean    Median    Std Dev        Min        Max
+Predicted  9.297803  8.010702  10.299373 -38.627621  47.478001
+----------------------------------------------------------------------
+Results for Model_1 with RobustScaler:
+Mean Squared Error: 31185.179785549542
+Mean Absolute Error: 40.91904372908724
+R-squared Score: -0.06879359907143034
+                Mean    Median    Std Dev        Min         Max
+Predicted  10.783834  7.277046  31.982233 -86.576477  759.787598
+----------------------------------------------------------------------
+Results for Model_2 with RobustScaler:
+Mean Squared Error: 29436.86209476258
+Mean Absolute Error: 39.453500701367396
+R-squared Score: -0.008874407650821148
+               Mean    Median    Std Dev       Min         Max
+Predicted  7.791211  4.309485  10.401059 -7.663284  150.235397
+----------------------------------------------------------------------
+Results for Model_3 with RobustScaler:
+Mean Squared Error: 29215.744399802126
+Mean Absolute Error: 39.15085341559672
+R-squared Score: -0.001296154819177442
+               Mean    Median   Std Dev         Min         Max
+Predicted  7.254786  5.550362  13.31298 -101.294998  179.043594
+----------------------------------------------------------------------
+Results for Model_4 with RobustScaler:
+Mean Squared Error: 34361.693279357314
+Mean Absolute Error: 42.445395282508215
+R-squared Score: -0.17766060939147166
+                Mean   Median     Std Dev        Min         Max
+Predicted  12.613401  5.22194  102.621025 -64.509712  2879.93042
+----------------------------------------------------------------------
+Results for Model_5 with RobustScaler:
+Mean Squared Error: 36276.54112225144
+Mean Absolute Error: 45.5395421507271
+R-squared Score: -0.2432872029129658
+               Mean     Median     Std Dev       Min          Max
+Predicted  19.12685  10.343161  108.478394 -2.605762  2841.594238
+----------------------------------------------------------------------
+Results for Model_6 with RobustScaler:
+Mean Squared Error: 38246.75212848309
+Mean Absolute Error: 42.25306785075731
+R-squared Score: -0.31081122960644736
+               Mean    Median    Std Dev        Min          Max
+Predicted  9.937139  3.820748  101.29097 -16.070887  2934.269043
+----------------------------------------------------------------------
+Results for Model_7 with RobustScaler:
+Mean Squared Error: 30751.41922779975
+Mean Absolute Error: 39.52010755907951
+R-squared Score: -0.053927546964607
+               Mean    Median    Std Dev         Min         Max
+Predicted  8.050753  6.693784  13.102309 -129.504196  206.431427
+----------------------------------------------------------------------
+Results for Model_8 with RobustScaler:
+Mean Squared Error: 30528.628328207098
+Mean Absolute Error: 40.142758343365465
+R-squared Score: -0.04629194925269853
+               Mean    Median    Std Dev        Min         Max
+Predicted  8.131245  5.218473  31.797243 -16.050314  899.325378
+----------------------------------------------------------------------
+Results for Model_9 with RobustScaler:
+Mean Squared Error: 29683.16559251897
+Mean Absolute Error: 38.96902497320966
+R-squared Score: -0.01731584052506485
+               Mean    Median   Std Dev         Min         Max
+Predicted  5.847427  2.903183  9.042946 -109.623161  100.825829
+----------------------------------------------------------------------
+Results for Model_10 with RobustScaler:
+Mean Squared Error: 29768.975398092727
+Mean Absolute Error: 39.79682087015682
+R-squared Score: -0.020256755779216817
+               Mean    Median    Std Dev        Min         Max
+Predicted  10.49067  8.772844  14.319017 -31.247114  180.653366
+----------------------------------------------------------------------
